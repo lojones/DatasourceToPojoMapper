@@ -26,7 +26,7 @@ IE
 
 Usage
 =====
-  DataSourceToPojoMapping dataSourceToPojoMapping = new DataSourceToPojoMapping();
+	DataSourceToPojoMapper dataSourceToPojoMapper = new DataSourceToPojoMapper();
 	
 	ResultSet rs = preparedStatement.execute();
 	
@@ -34,7 +34,7 @@ Usage
 	
 	while (rs.next())
 	{
-		User user = dataSourceToPojoMapping.getMappedObj(rs, User.class);	
+		User user = dataSourceToPojoMapper.getMappedObj(rs, User.class);	
 		users.add(user);
 	}
 
