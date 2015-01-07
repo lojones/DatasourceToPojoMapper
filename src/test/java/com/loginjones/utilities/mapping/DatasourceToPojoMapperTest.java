@@ -72,7 +72,6 @@ public class DatasourceToPojoMapperTest extends TestCase
 	public void testSet() throws Exception
 	{
 		
-		
 		SomeModel obj=new SomeModel();
 		
 		DatasourceToPojoMapper mapper=new DatasourceToPojoMapper();
@@ -80,5 +79,7 @@ public class DatasourceToPojoMapperTest extends TestCase
 		
 		assertEquals(Integer.valueOf(1), obj.getIntField());
 	}
+	
+	
 
 }
