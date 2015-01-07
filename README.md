@@ -32,7 +32,7 @@ Usage
 	
 	List<User> users=new ArrayList<User>();
 	
-	if (rs.next())
+	while (rs.next())
 	{
 		User user = dataSourceToPojoMapping.getMappedObj(rs, User.class);	
 		users.add(user);
